@@ -1,0 +1,281 @@
+body,
+section,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+body {
+    color: #444444;
+    background-color: #f1f4f8;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+section {
+    margin: 40px;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+h2 {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+ul {
+    margin-bottom: 24px;
+}
+
+img {
+    margin-bottom: 24px;
+}
+
+.home {
+    text-align: center;
+    padding: 40px;
+}
+
+.home img{
+    width: 200px;
+}
+
+.home-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .home a {
+    text-decoration: none;
+} */
+
+.home-icons .home-span {
+    font-size: 40px;
+    color: #333333;
+}
+
+.home-icons .home-span + .home-span {
+    margin-right: 40px;
+    margin-left: 8px;
+}
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+    /* background-image: url(assets/background.png); */
+    /* background-size: cover; */
+}
+
+.home-main-container {
+    width: 600px;
+    text-align: center;
+}
+
+.home-main-container h1 {
+    font-size: 48px;
+    letter-spacing: 0.1rem;
+}
+
+.home-main-container h2 {
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+}
+
+.home-main-container img {
+    margin: 0;
+}
+
+.right-container {
+    flex-shrink: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container img {
+    margin-bottom: 24px;
+}
+
+.home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button-container a + a {
+    margin-left: 24px;
+}
+
+.home-button-container a.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #2c3e50;
+    color: #ffffff;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    text-decoration: none;
+}
+.home-button-container a.btn:hover {
+    background: #4b986c;
+}
+
+.privacy {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    text-decoration: none;
+    color: #333333
+}
+
+.privacy span {
+    font-size: 36px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px 10px;
+}
+footer nav {
+    margin: 10px 0;
+}
+footer nav a {
+    color: #bdc3c7;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+footer nav a:hover {
+    color: #ffffff;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.language-switcher .lang-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.language-switcher .lang-link:hover {
+    color: #007bff;
+}
+
+/* マージン系 */
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 959px) {
+	.home-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home-main-container h2 {
+        font-size: 18px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 24px;
+    }
+
+    .home-button-container {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	.home-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home-main-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-main-container h1 {
+        font-size: 26px;
+        letter-spacing: 0.1rem;
+    }
+    
+    .home-main-container h2 {
+        font-size: 18px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 24px;
+    }
+    
+    .home-main-container img {
+        margin: 0;
+    }
+
+    .right-container img {
+        width: 30%;
+        margin-bottom: 16px;
+    }
+
+    .left-container > img {
+        width: 100%;
+    }
+
+    .home-button-container {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .home-button-container img {
+        width: 140px;
+    }
+
+    .home-button-container a + a {
+        margin-left: 16px;
+    }
+
+    #apple-btn {
+        width: 120px;
+    }
+
+    .privacy {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        text-decoration: none;
+        color: #333333
+    }
+}
